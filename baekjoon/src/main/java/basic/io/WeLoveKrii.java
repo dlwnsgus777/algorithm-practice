@@ -1,4 +1,4 @@
-package basic;
+package basic.io;
 
 public class WeLoveKrii {
     public static void main(String[] args) {
