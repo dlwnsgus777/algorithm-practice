@@ -10,23 +10,19 @@ public class Cycle {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int a = Integer.parseInt(br.readLine());
-        int b = 0;
+        int b = a;
         int count = 0;
 
         if(a < 10) {
             a *= 10;
         }
 
-        int first = a / 10;
-        int second = a % 10;
-
         while(a != b) {
-            int sum = (first + second) %  10;
-            b = second * 10 + sum;
-            first = b / 10;
-            second = b % 10;
+            System.out.println(b);
+            b = (b % 10) * 10 + ((b / 10) + (b % 10)) % 10;
             count++;
-        }
+        };
+
         System.out.println(count);
     }
 }
