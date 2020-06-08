@@ -1,5 +1,6 @@
 package basic.test1;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class SecondNumber {
@@ -12,9 +13,8 @@ public class SecondNumber {
             arr[i] = sc.nextInt();
         }
 
-        for(int i = 0; i < arr.length; i++) {
-            if(arr)
-        }
-        
+        Arrays.sort(arr);
+
+        System.out.println(arr[1]);
     }
 }
