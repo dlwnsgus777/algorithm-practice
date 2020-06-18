@@ -3,15 +3,11 @@ package basic.functions;
 import java.util.Scanner;
 
 public class NPlus {
-    public static void main(String[] args) {
-
-    }
-    public long sum(int[] a) {
-        long result = 0;
-
-        for(int b: a) {
-            result += b;
+    long sum(int[] a) {
+        long ans = 0;
+        for (int i = 0; i < a.length; i++) {
+            ans += a[i];
         }
-        return result;
+        return ans;
     }
 }
