@@ -7,7 +7,7 @@ public class NumberPlus {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        String b = sc.nextLine();
+        String b = sc.next();
 
         String[] arr = b.split("");
 
