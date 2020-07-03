@@ -13,15 +13,16 @@ public class Cycle {
         int b = a;
         int count = 0;
 
-        if(a < 10) {
-            a *= 10;
-        }
+//        if(a < 10) {
+//            a = a * 10;
+//        }
 
-        while(a != b) {
-            System.out.println(b);
-            b = (b % 10) * 10 + ((b / 10) + (b % 10)) % 10;
+        do {
+            int f = b / 10;
+            int s = b % 10;
+            b = s * 10 + ((f + s) % 10);
             count++;
-        };
+        } while(a != b);
 
         System.out.println(count);
     }
