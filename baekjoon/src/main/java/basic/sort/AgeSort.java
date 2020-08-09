@@ -18,22 +18,10 @@ public class AgeSort {
             }
         }
 
-        for (int i = 0; i < n; i++) {
-
-            for (int j = 0; j < 2; j++) {
-                System.out.print(arr[i][j]);
-            }
-
-            System.out.println();
-        }
+        Arrays.sort(arr, (e1, e2) -> Integer.parseInt(e1[0]) - Integer.parseInt(e2[0]));
 
         for (int i = 0; i < n; i++) {
-
-            for (int j = 0; j < 2; j++) {
-                System.out.print(arr[i][j]);
-            }
-
-            System.out.println();
+            System.out.println(arr[i][0] + " " + arr[i][1]);
         }
     }
 }
