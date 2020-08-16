@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class NQueen {
     static int n;
-    static boolean[][] check;
+    static boolean[] check;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         n = sc.nextInt();
-        check = new boolean[n][n];
+        check = new boolean[n];
     }
 }
