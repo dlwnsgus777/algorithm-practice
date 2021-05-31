@@ -13,4 +13,4 @@ for step in steps:
   if next_row >=1 and next_row <= 8 and next_column >= 1 and next_column <= 8:
     result += 1
 
-print(result)
+print(result) 
