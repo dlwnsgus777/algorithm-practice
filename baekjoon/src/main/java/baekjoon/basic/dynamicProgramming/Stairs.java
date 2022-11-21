@@ -16,7 +16,7 @@ public class Stairs {
         }
 
         for (int i = 0; i < n; i++) {
-            dp[i] = 
+//            dp[i] =
         }
 
     }
