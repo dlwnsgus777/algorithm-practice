@@ -1,4 +1,4 @@
-package baekjoon.dfs;
+package baekjoon.dfs_bfs;
 
 public class 기본 {
    // 방문처리에 사용 할 배열선언
