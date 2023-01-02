@@ -3,33 +3,27 @@ package baekjoon.dp;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class 일로만들기 {
    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-   static int cnt;
    static int[] dp;
    public static void main(String[] args) throws IOException {
-      int n = Integer.parseInt(br.readLine());
-      cnt = 0;
-      dp = new int[1000001];
-      Arrays.fill(dp, -1);
+      int N = Integer.parseInt(br.readLine());
 
+      dp = new int[N + 1];
 
+      for (int i = 2; i < dp.length; i++) {
+         dp[i] = dp[i - 1] + 1;
 
+         if (i % 3 == 0) {
+            dp[i] = Math.min(dp[i], dp[i / 3] + 1);
+         }
+
+         if (i % 2 == 0) {
+            dp[i] = Math.min(dp[i], dp[i / 2] + 1);
+         }
+      }
+
+      System.out.println(dp[N]);
    }
-
-//   private static int dp(int n) {
-//      if (n == 1) {
-//         return 0;
-//      }
-//
-//      if (dp[n] != -1) {
-//         return dp[n];
-//      }
-//
-//      int result = dp(n - 1) + 1;
-//      if (n % 3 == 0) {
-//      }
-//   }
 }
